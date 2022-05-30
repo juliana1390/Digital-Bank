@@ -1,8 +1,11 @@
 public interface iAccount {
 
-    class ToWithdrawTheMoney(double value);
+    void toWithdrawTheMoney(double value);
 
-    class toMakeADeposit(double value);
+    void toMakeADeposit(double value);
 
-    class ToWireTheMoney(double value, Account destinationAccount);
+    void toWireTheMoney(double value, Account destinationAccount);
+
+    void printBankStatement();
+
 }
